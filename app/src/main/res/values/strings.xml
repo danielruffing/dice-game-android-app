@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">cse438-assignment2</string>
+    <string name="title">Dice Roll!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="average_roll">Average Roll</string>
+    <string name="lowest_roll">Lowest Roll</string>
+    <string name="highest_roll">Highest Roll</string>
+    <string name="bank_balance">Bank Balance</string>
+    <string name="jackpot_chance">Jackpot Chance!</string>
+    <string name="value">Value</string>
+
+    <string name="see_results">Stats</string>
+    <string name="home">Home</string>
+    <string name="roll">Roll</string>
+    <string name="highest">Highest</string>
+    <string name="lowest">Lowest</string>
+    <string name="average">Average</string>
+    <string name="bank">Bank</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

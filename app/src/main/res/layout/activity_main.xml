@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:gravity="center"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dice_number"/>
+    <EditText
+        android:id="@+id/dice_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="26dp"
+        android:hint="Number of Dice"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/greeting"
+        app:layout_constraintBottom_toBottomOf="@id/dice_value"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="161dp" android:layout_marginStart="161dp"
+        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        />
+    <EditText
+        android:id="@+id/dice_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="26dp"
+        android:hint="Max Dice Value"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/dice_number"
+        app:layout_constraintBottom_toBottomOf="@id/roll_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="161dp" android:layout_marginStart="161dp"
+        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        />
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/roll"
+        app:layout_constraintTop_toBottomOf="@+id/dice_value"
+        app:layout_constraintBottom_toBottomOf="@id/clear_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="161dp" android:layout_marginStart="161dp"
+        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"/>
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        app:layout_constraintTop_toBottomOf="@+id/roll_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="161dp" android:layout_marginStart="161dp"
+        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
